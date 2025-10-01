@@ -14,7 +14,7 @@ app.get('/health', (req, res) => {
 // Main endpoint
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from ECS Fargate!',
+    message: 'Hello from ECS Fargate! v2.0',
     container: process.env.HOSTNAME,
     region: process.env.AWS_REGION || 'not-set'
   });
